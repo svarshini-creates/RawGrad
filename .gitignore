@@ -1,0 +1,38 @@
+﻿# Virtual environments
+.venv/
+venv/
+env/
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Test and coverage artifacts
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Downloaded datasets and generated model artifacts
+data/*
+!data/.gitkeep
+checkpoints/
+*.pth
+*.pt
+*.onnx
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables and local secrets
+.env
+.env.*
+
+# Editors and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
