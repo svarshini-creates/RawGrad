@@ -11,4 +11,3 @@ print("Weighted Sum:", z)
 #ReLU activation
 a = np.maximum(0,z)
 print("Neuron output:",a)
-

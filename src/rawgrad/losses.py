@@ -8,7 +8,6 @@ class MeanSquaredError:
         )
     def backward(self):
         return(
-            2 * (self.predictions - self.targets) 
+            2 * (self.predictions - self.targets)
             / self.predictions.size
         )
-        

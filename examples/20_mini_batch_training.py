@@ -36,7 +36,7 @@ model = Sequential([
 ])
 loss_function = BinaryCrossEntropy()
 optimizer = SGD(learning_rate=LEARNING_RATE)
-#train 
+#train
 for epoch in range(EPOCHS):
     # Shuffle training samples every epoch
     shuffled_indices = np.random.permutation(
@@ -49,7 +49,7 @@ for epoch in range(EPOCHS):
         end = start + BATCH_SIZE
         X_batch = X_shuffled[start:end]
         y_batch = y_shuffled[start:end]
-        # Forward propagation 
+        # Forward propagation
         predictions = model.forward(X_batch)
         # Calculate the batch loss
         loss = loss_function.forward(

@@ -65,7 +65,7 @@ for epoch in range(epochs):
             f"| Loss:{average_loss:.6f}"
         )
 #evaluate model
-print("MULTILAYER CLASSIFICATION RESULTS") 
+print("MULTILAYER CLASSIFICATION RESULTS")
 correct = 0
 for i in range(len(X)):
     sample = X[i]
@@ -87,6 +87,3 @@ for i in range(len(X)):
 accuracy = correct / len(X) * 100
 print(f"\n Accuracy :{accuracy:.2f}%")
 print(f"Correct predictions:{correct} / {len(X)}")
- 
-    
-        

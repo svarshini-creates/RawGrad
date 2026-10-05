@@ -9,9 +9,19 @@ class Sequential:
             output = layer.forward(output)
 
         return output
-    def backward(self, gradient):
 
+    def backward(self, gradient):
         for layer in reversed(self.layers):
             gradient = layer.backward(gradient)
 
         return gradient
+
+    def regularization_loss(self):
+        """Calculate the total L2 penalty across model layers."""
+        total = 0.0
+
+        for layer in self.layers:
+            if hasattr(layer, "regularization_loss"):
+                total += layer.regularization_loss()
+
+        return total

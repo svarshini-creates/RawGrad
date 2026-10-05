@@ -47,11 +47,11 @@ for epoch in range(epochs):
         model.backward(gradient)
         #update weights and gradients
         optimizer.step(model)
-    average_loss = total_loss / len(X)   
+    average_loss = total_loss / len(X)
     if (epoch + 1) % 100 == 0:
         print(
             f"Epoch {epoch + 1:4d}"
-            f" | Loss: {average_loss:.6f}"  
+            f" | Loss: {average_loss:.6f}"
         )
 #final predictions
 print("CLASSIFICATION RESULTS")
@@ -74,5 +74,3 @@ for i in range(len(X)):
     )
 accuracy = correct / len(X) * 100
 print(f"\n Accuracy: {accuracy:.2f}%")
-
-        

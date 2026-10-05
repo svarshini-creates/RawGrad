@@ -97,7 +97,7 @@ predicted_classes = np.argmax(
 test_accuracy = np.mean(
     predicted_classes == y_test
 ) * 100
-#display eval 
+#display eval
 print("RAWGRAD: MNIST CLASSIFICATION RESULTS")
 print(f"Training samples : {len(X_train)}")
 print(f"Testing samples  : {len(X_test)}")

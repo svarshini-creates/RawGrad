@@ -12,4 +12,3 @@ print("\n Biases:")
 print(layer.biases)
 print("\n Output:")
 print(output)
-

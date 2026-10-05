@@ -8,6 +8,6 @@ b = -10.0
 #fp
 z = np.dot(w,x) + b
 print("Weighted Sum:" , z)
-#ReLU 
+#ReLU
 a = np.maximum(0,z)
 print("Neuron Output:", a)

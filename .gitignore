@@ -6,7 +6,7 @@ env/
 __pycache__/
 *.py[cod]
 *$py.class
-*.egg-info/
+
 
 # Test and coverage artifacts
 .coverage
@@ -36,3 +36,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Generated package metadata
+*.egg-info/

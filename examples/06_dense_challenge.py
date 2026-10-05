@@ -20,6 +20,3 @@ print("\n Before ReLU:")
 print(z)
 print("\n After ReLU:")
 print(output)
-
-
- 

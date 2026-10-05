@@ -44,4 +44,3 @@ for X in x:
         f"X = {X[0]: .1f}"
         f"-> prediction = {prediction[0]:.4f}"
     )
-    

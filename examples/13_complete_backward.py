@@ -11,7 +11,7 @@ model = Sequential([
     ReLU(),
     Dense(4,2)
 ])
-#loss function 
+#loss function
 loss_function = MeanSquaredError()
 #input
 x = np.array([
@@ -33,7 +33,7 @@ print("\n Prediction:")
 print(prediction)
 print("\n Target: ")
 print(target)
-#calculate loss 
+#calculate loss
 loss = loss_function.forward(
     prediction,
     target
@@ -54,9 +54,7 @@ print("PARAMETER GRADIENTS")
 for i , layer in enumerate(model.layers):
     if hasattr(layer , "weights_gradient"):
         print(f"\n Layer {i+1}: {layer.__class__.__name__}")
-        print("Weights gradient:")  
+        print("Weights gradient:")
         print(layer.weights_gradient)
         print("\n Bias gradient:")
         print(layer.biases_gradient)
-        
-    
