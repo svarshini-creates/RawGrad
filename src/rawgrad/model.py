@@ -17,7 +17,6 @@ class Sequential:
         return gradient
 
     def regularization_loss(self):
-        """Calculate the total L2 penalty across model layers."""
         total = 0.0
 
         for layer in self.layers:
